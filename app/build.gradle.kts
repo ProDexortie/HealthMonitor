@@ -38,7 +38,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation("androidx.core:core-splashscreen:1.0.0")
-
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
     // RecyclerView и CardView
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.cardview:cardview:1.0.0")

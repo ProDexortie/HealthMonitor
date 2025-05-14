@@ -17,6 +17,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager2.widget.ViewPager2;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.healthmonitor.R;
 import com.example.healthmonitor.database.DataManager;
@@ -218,7 +220,7 @@ public class AddFoodActivity extends AppCompatActivity implements SearchFoodFrag
     }
 
     // Адаптер для ViewPager
-    private static class AddFoodPagerAdapter extends androidx.fragment.app.FragmentStateAdapter {
+    private class AddFoodPagerAdapter extends FragmentStateAdapter {
 
         public AddFoodPagerAdapter(@NonNull AppCompatActivity activity) {
             super(activity);
@@ -226,7 +228,7 @@ public class AddFoodActivity extends AppCompatActivity implements SearchFoodFrag
 
         @NonNull
         @Override
-        public androidx.fragment.app.Fragment createFragment(int position) {
+        public Fragment createFragment(int position) {
             if (position == 0) {
                 return new SearchFoodFragment();
             } else {

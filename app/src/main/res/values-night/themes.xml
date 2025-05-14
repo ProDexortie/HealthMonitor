@@ -13,7 +13,7 @@
         <item name="colorOnSecondary">@color/black</item>
 
         <!-- Цвета фона и поверхностей -->
-        <item name="android:colorBackground">?android:attr/colorBackground_dark</item>
+        <item name="android:colorBackground">@color/background_dark</item>
         <item name="colorSurface">@color/surface_dark</item>
         <item name="colorOnSurface">@color/on_surface_dark</item>
         <item name="colorOnBackground">@color/on_background_dark</item>
@@ -72,7 +72,7 @@
 
     <!-- Стиль заставки (splash screen) для Android 12+ в темной теме -->
     <style name="Theme.HealthMonitor.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">?android:attr/colorBackground_dark</item>
+        <item name="windowSplashScreenBackground">@color/background_dark</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon_dark</item>
         <item name="windowSplashScreenAnimationDuration">800</item>
         <item name="postSplashScreenTheme">@style/Theme.HealthMonitor</item>
