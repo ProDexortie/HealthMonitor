@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета -->
+    <color name="green_50">#E8F5E9</color>
+    <color name="green_100">#C8E6C9</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_400">#66BB6A</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_600">#43A047</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="green_900">#1B5E20</color>
+
+    <color name="teal_50">#E0F2F1</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_400">#26A69A</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_600">#00897B</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_800">#00695C</color>
+    <color name="teal_900">#004D40</color>
+
+    <!-- Стандартные цвета -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+    <!-- Цвета фона (светлая тема) -->
+    <color name="background_light">@color/white</color>
+    <color name="surface_light">@color/white</color>
+    <color name="on_surface_light">@color/grey_900</color>
+    <color name="on_background_light">@color/grey_900</color>
+
+    <!-- Цвета фона (темная тема) -->
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="on_surface_dark">@color/white</color>
+    <color name="on_background_dark">@color/white</color>
+
+    <!-- Цвета статус бара и навигации -->
+    <color name="nav_bar_light">@color/white</color>
+    <color name="nav_bar_dark">@color/black</color>
+
+    <!-- Цвета ошибок (светлая тема) -->
+    <color name="error_light">#B00020</color>
+    <color name="error_container_light">#FFDAD6</color>
+    <color name="on_error_container_light">#410002</color>
+
+    <!-- Цвета ошибок (темная тема) -->
+    <color name="error_dark">#FFB4AB</color>
+    <color name="error_container_dark">#93000A</color>
+    <color name="on_error_container_dark">#FFDAD6</color>
+
+    <!-- Цвета успеха -->
+    <color name="success_light">@color/green_600</color>
+    <color name="success_dark">@color/green_300</color>
+
+    <!-- Цвета предупреждения -->
+    <color name="warning_light">#FF9800</color>
+    <color name="warning_dark">#FFB74D</color>
+
+    <!-- Цвета контуров -->
+    <color name="outline_light">#79747E</color>
+    <color name="outline_dark">#938F99</color>
+
+    <!-- Цвета ripple эффекта -->
+    <color name="ripple_light">#1A000000</color>
+    <color name="ripple_dark">#33FFFFFF</color>
+
+    <!-- Состояния цветов для компонентов -->
+    <!-- Для bottom navigation -->
+    <color name="bottom_nav_item_color_selected">?attr/colorPrimary</color>
+    <color name="bottom_nav_item_color_unselected">?attr/colorOnSurface</color>
+
+    <!-- Для TextInputLayout -->
+    <color name="text_input_stroke_default">?attr/colorOutline</color>
+    <color name="text_input_stroke_focused">?attr/colorPrimary</color>
+    <color name="text_input_stroke_error">?attr/colorError</color>
+
+    <!-- Для Switch -->
+    <color name="switch_thumb_checked">?attr/colorPrimary</color>
+    <color name="switch_thumb_unchecked">?attr/colorSurface</color>
+    <color name="switch_track_checked">@color/green_200</color>
+    <color name="switch_track_unchecked">?attr/colorOutline</color>
+
+    <!-- Для Chip -->
+    <color name="chip_background_selected">?attr/colorPrimaryVariant</color>
+    <color name="chip_background_unselected">?attr/colorSurface</color>
+    <color name="chip_text_selected">?attr/colorOnPrimary</color>
+    <color name="chip_text_unselected">?attr/colorPrimary</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HealthMonitor</string>
+
+    <!-- Общие строки -->
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="add">Добавить</string>
+
+    <!-- Навигация и заголовки -->
+    <string name="profile">Профиль</string>
+    <string name="food_diary">Дневник питания</string>
+    <string name="statistics">Статистика</string>
+    <string name="add_food">Добавить блюдо</string>
+
+    <!-- Текст профиля -->
+    <string name="name">Имя</string>
+    <string name="age">Возраст</string>
+    <string name="gender">Пол</string>
+    <string name="height">Рост (см)</string>
+    <string name="weight">Вес (кг)</string>
+    <string name="target_weight">Целевой вес (кг)</string>
+    <string name="activity_level">Уровень активности</string>
+    <string name="daily_calories">Дневная норма калорий</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="update_profile">Обновить профиль</string>
+
+    <!-- Уровни активности -->
+    <string name="activity_level_sedentary">Малоподвижный</string>
+    <string name="activity_level_light">Легкая активность</string>
+    <string name="activity_level_moderate">Умеренная активность</string>
+    <string name="activity_level_active">Активный</string>
+    <string name="activity_level_very_active">Очень активный</string>
+
+    <!-- Дневник питания -->
+    <string name="breakfast">Завтрак</string>
+    <string name="lunch">Обед</string>
+    <string name="dinner">Ужин</string>
+    <string name="snack">Перекус</string>
+    <string name="meal_type">Тип приема пищи</string>
+    <string name="date">Дата</string>
+    <string name="food_name">Название блюда</string>
+    <string name="calories">Калории</string>
+    <string name="proteins">Белки (г)</string>
+    <string name="fats">Жиры (г)</string>
+    <string name="carbs">Углеводы (г)</string>
+    <string name="portion_size">Размер порции (г)</string>
+    <string name="add_to_diary">Добавить в дневник</string>
+
+    <!-- Статистика -->
+    <string name="daily_summary">Дневная сводка</string>
+    <string name="weekly_summary">Недельная сводка</string>
+    <string name="monthly_summary">Месячная сводка</string>
+    <string name="calories_consumed">Потреблено калорий</string>
+    <string name="calories_remaining">Осталось калорий</string>
+    <string name="macronutrients">Макронутриенты</string>
+    <string name="weight_trend">Динамика веса</string>
+
+    <!-- Сообщения -->
+    <string name="profile_updated">Профиль обновлен</string>
+    <string name="food_added">Блюдо добавлено</string>
+    <string name="food_deleted">Блюдо удалено</string>
+    <string name="fill_all_fields">Пожалуйста, заполните все поля</string>
+    <string name="welcome_message">Добро пожаловать в HealthMonitor!</string>
+    <string name="setup_profile">Настройте ваш профиль для начала работы</string>
+</resources>

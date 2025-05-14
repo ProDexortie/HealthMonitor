@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Пользовательские атрибуты темы -->
+    <attr name="colorSuccess" format="color|reference" />
+    <attr name="colorWarning" format="color|reference" />
+</resources>

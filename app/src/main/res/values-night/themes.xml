@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Темная тема приложения -->
+    <style name="Theme.HealthMonitor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Основные цвета бренда (адаптированные для темной темы) -->
+        <item name="colorPrimary">@color/green_300</item>
+        <item name="colorPrimaryVariant">@color/green_900</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Дополнительные цвета -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_900</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Цвета фона и поверхностей -->
+        <item name="android:colorBackground">?android:attr/colorBackground_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/on_surface_dark</item>
+        <item name="colorOnBackground">@color/on_background_dark</item>
+
+        <!-- Цвета ошибок -->
+        <item name="colorError">@color/error_dark</item>
+        <item name="colorOnError">@color/black</item>
+        <item name="colorErrorContainer">@color/error_container_dark</item>
+        <item name="colorOnErrorContainer">@color/on_error_container_dark</item>
+
+        <!-- Цвета успеха и предупреждения -->
+        <item name="colorSuccess">@color/success_dark</item>
+        <item name="colorWarning">@color/warning_dark</item>
+
+        <!-- Статус бар и навигация -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/nav_bar_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- Контурные цвета -->
+        <item name="colorOutline">@color/outline_dark</item>
+
+        <!-- Рипл эффекты -->
+        <item name="colorControlHighlight">@color/ripple_dark</item>
+
+        <!-- Другие атрибуты темы -->
+        <item name="bottomNavigationStyle">@style/Widget.HealthMonitor.BottomNavigationView</item>
+        <item name="toolbarStyle">@style/Widget.HealthMonitor.Toolbar</item>
+        <item name="materialCardViewStyle">@style/Widget.HealthMonitor.Card</item>
+        <item name="textInputStyle">@style/Widget.HealthMonitor.TextInputLayout</item>
+        <item name="tabStyle">@style/Widget.HealthMonitor.TabLayout</item>
+        <item name="switchStyle">@style/Widget.HealthMonitor.Switch</item>
+        <item name="materialDividerStyle">@style/Widget.HealthMonitor.Divider</item>
+
+        <!-- Текстовые стили -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.HealthMonitor.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.HealthMonitor.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.HealthMonitor.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.HealthMonitor.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.HealthMonitor.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.HealthMonitor.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.HealthMonitor.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.HealthMonitor.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.HealthMonitor.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.HealthMonitor.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.HealthMonitor.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.HealthMonitor.Overline</item>
+        <item name="textAppearanceButton">@style/TextAppearance.HealthMonitor.Button</item>
+
+        <!-- Скругления -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.HealthMonitor.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HealthMonitor.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.HealthMonitor.LargeComponent</item>
+    </style>
+
+    <!-- Стиль заставки (splash screen) для Android 12+ в темной теме -->
+    <style name="Theme.HealthMonitor.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">?android:attr/colorBackground_dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon_dark</item>
+        <item name="windowSplashScreenAnimationDuration">800</item>
+        <item name="postSplashScreenTheme">@style/Theme.HealthMonitor</item>
+    </style>
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Текстовые стили -->
+    <style name="TextAppearance.HealthMonitor.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:alpha">0.75</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:alpha">0.75</item>
+    </style>
+
+    <!-- Компонентные стили -->
+    <style name="Widget.HealthMonitor.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Card.Elevated" parent="Widget.HealthMonitor.Card">
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Card.Outlined" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.HealthMonitor.Button</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Button.Secondary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:textAppearance">@style/TextAppearance.HealthMonitor.Button</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.HealthMonitor.Button</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.HealthMonitor.Button</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="tint">?attr/colorOnPrimary</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance.HealthMonitor.Caption</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.HealthMonitor.Caption</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemRippleColor">?attr/colorControlHighlight</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextAppearance">@style/TextAppearance.HealthMonitor.Headline6</item>
+        <item name="titleTextColor">?attr/colorOnPrimary</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.HealthMonitor.Subtitle1</item>
+        <item name="subtitleTextColor">?attr/colorOnPrimary</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeColor">@color/text_input_stroke_color</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.TextInputLayout.Dropdown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeColor">@color/text_input_stroke_color</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabTextAppearance">@style/TextAppearance.HealthMonitor.Tab</item>
+        <item name="tabTextColor">?attr/colorOnSurface</item>
+        <item name="tabSelectedTextColor">?attr/colorPrimary</item>
+        <item name="tabRippleColor">?attr/colorControlHighlight</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Tab" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="chipStrokeColor">?attr/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.HealthMonitor.Chip</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+    </style>
+
+    <style name="TextAppearance.HealthMonitor.Chip" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.ProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">?attr/colorPrimary</item>
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.ProgressBar.Circular" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.HealthMonitor.Divider" parent="Widget.MaterialComponents.MaterialDivider">
+        <item name="dividerColor">?attr/colorOutline</item>
+        <item name="dividerInsetStart">0dp</item>
+        <item name="dividerInsetEnd">0dp</item>
+        <item name="dividerThickness">1dp</item>
+    </style>
+</resources>
