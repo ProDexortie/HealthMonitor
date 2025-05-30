@@ -92,12 +92,12 @@ public class FoodDiaryFragment extends Fragment {
 
     private void setupListeners() {
         btnPrevDay.setOnClickListener(v -> {
-            currentDate = DateUtils.getDateWithOffset(-1);
+            currentDate = DateUtils.getDateWithOffset(currentDate, -1); // Правильно!
             updateUI();
         });
 
         btnNextDay.setOnClickListener(v -> {
-            String nextDate = DateUtils.getDateWithOffset(1);
+            String nextDate = DateUtils.getDateWithOffset(currentDate, 1);
             if (DateUtils.compareDates(nextDate, DateUtils.getCurrentDate()) <= 0) {
                 currentDate = nextDate;
                 updateUI();

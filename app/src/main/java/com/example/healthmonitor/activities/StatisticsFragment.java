@@ -48,11 +48,11 @@ public class StatisticsFragment extends Fragment {
     private ViewPager2 viewPager;
     private StatisticsPagerAdapter adapter;
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_statistics, container, false);
-
         initUI(view);
         setupViewPager();
 
@@ -406,6 +406,7 @@ public class StatisticsFragment extends Fragment {
 
         // Загрузка данных о весе
         private void loadWeightChart() {
+            String currentDate = DateUtils.getCurrentDate();
             ArrayList<Entry> entries = new ArrayList<>();
             ArrayList<String> dateLabels = new ArrayList<>();
 
@@ -413,7 +414,7 @@ public class StatisticsFragment extends Fragment {
             if (period == 0) { // День
                 // За последние 7 дней
                 for (int i = 6; i >= 0; i--) {
-                    String date = DateUtils.getDateWithOffset(-i);
+                    String date = DateUtils.getDateWithOffset(currentDate, -i);;
                     // Генерируем случайный вес в диапазоне ±1 кг от текущего веса
                     float weight = (float) (currentUser.getWeight() + (Math.random() * 2 - 1) * 0.5);
                     entries.add(new Entry(6 - i, weight));

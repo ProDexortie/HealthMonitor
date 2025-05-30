@@ -23,7 +23,7 @@ public class MealCategoryAdapter extends RecyclerView.Adapter<MealCategoryAdapte
 
     private final Context context;
     private List<String> mealCategories;
-    private final String currentDate;
+    private String currentDate; // ИЗМЕНЕНО: убрали final
     private final long userId;
     private final DataManager dataManager;
 
@@ -68,6 +68,13 @@ public class MealCategoryAdapter extends RecyclerView.Adapter<MealCategoryAdapte
 
     public void updateData(List<String> mealCategories, long userId, String currentDate) {
         this.mealCategories = mealCategories;
+        this.currentDate = currentDate; // ДОБАВЛЕНО: обновляем currentDate
+        notifyDataSetChanged();
+    }
+
+    // НОВЫЙ МЕТОД: для обновления только даты
+    public void setCurrentDate(String currentDate) {
+        this.currentDate = currentDate;
         notifyDataSetChanged();
     }
 
@@ -98,7 +105,7 @@ public class MealCategoryAdapter extends RecyclerView.Adapter<MealCategoryAdapte
                     // Запуск активности добавления продукта с типом приема пищи
                     Intent intent = new Intent(context, AddFoodActivity.class);
                     intent.putExtra("meal_type", mealType);
-                    intent.putExtra("date", currentDate);
+                    intent.putExtra("date", currentDate); // ИСПОЛЬЗУЕМ актуальную дату
                     context.startActivity(intent);
                 }
             });
@@ -108,6 +115,7 @@ public class MealCategoryAdapter extends RecyclerView.Adapter<MealCategoryAdapte
             tvMealType.setText(mealCategory);
 
             // Получаем список блюд для данного типа приема пищи через DataManager
+            // ИСПОЛЬЗУЕМ актуальную дату
             mealList = dataManager.getMealsByUserDateAndType(userId, currentDate, mealCategory);
 
             // Если список пуст, показываем сообщение

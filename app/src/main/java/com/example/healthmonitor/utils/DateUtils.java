@@ -25,10 +25,17 @@ public class DateUtils {
     }
 
     // Получение даты в формате "dd.MM.yyyy" для указанного смещения от текущей даты (в днях)
-    public static String getDateWithOffset(int daysOffset) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_YEAR, daysOffset);
-        return DATE_FORMAT.format(calendar.getTime());
+    public static String getDateWithOffset(String baseDate, int daysOffset) {
+        try {
+            Date date = DATE_FORMAT.parse(baseDate);
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(date);
+            calendar.add(Calendar.DAY_OF_YEAR, daysOffset);
+            return DATE_FORMAT.format(calendar.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return getDateWithOffset(daysOffset);
+        }
     }
 
     // Форматирование даты с днем недели "EEE, dd MMM"
